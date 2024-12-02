@@ -1,7 +1,22 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
+public class Car
+{
+    private int driven;
+    private int until;
+    public Car (int driven, int until){
+        this.driven = driven;
+        this.until = until;
+    }
 
-//design your Car class
-//write all code for your Car class here
-//test your Car class with the CarRunner
+    public boolean timeForOilChange(){
+        if (driven >= until){
+            driven = 0;
+            return true;
+        }
+        return false;
+    }
+    public void addMiles(int m){
+        driven += m;
+
+    }
+
+}
